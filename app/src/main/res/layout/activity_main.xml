@@ -5,14 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <com.example.demo.myView
-        android:id="@+id/myView"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true">
-
-
-    </com.example.demo.myView>
-
+<FrameLayout
+    android:id="@+id/mframe"
+    android:layout_width="300dp"
+    android:layout_centerInParent="true"
+    android:layout_height="100dp"/>
 </RelativeLayout>

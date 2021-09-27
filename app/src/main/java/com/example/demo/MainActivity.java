@@ -13,15 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TestFragment fragment = new TestFragment();
+        getFragmentManager().beginTransaction().replace(R.id.mframe, fragment).commitAllowingStateLoss();
 
-        myView myView = findViewById(R.id.myView);
-
-        myView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "我是传递过来的view", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
 }
